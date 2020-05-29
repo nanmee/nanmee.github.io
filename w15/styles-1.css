@@ -1,0 +1,862 @@
+
+.review-title {
+  border-bottom: 1px solid #9e9e9e; margin-bottom: 15px;
+}
+.review-title p{
+  margin-bottom: 5px;
+}
+.review-title .fa-times {
+  font-size: 20px; cursor: pointer; display: inline-block;
+}
+
+
+
+
+.c-both {
+  clear: both;
+}
+.d-inline-block {
+  display: inline-block;
+}
+.d-block {
+  display: block;
+}
+.f-right {
+  float: right;
+}
+.full-width {
+  width: 100% !important;
+}
+.v-top {
+  vertical-align: top;
+}
+.p-relative {
+  position: relative;
+}
+.p-absolute {
+  position: absolute;
+}
+.ajaxreviews-pending-approve,
+.ajaxreviews-pending-reject,
+.ajaxreviews-review-emailpost,
+.ajaxreviews-review-unsubscribe,
+.ajaxreviews-review-testunsubscribe {
+  padding: 0 !important;
+}
+.mp-email-result-box {
+  text-align: center;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+.mp-email-result-box:before {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+.mp-email-result {
+  font-size: 15px;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 30px;
+  max-width: 95%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: rgba(75, 140, 42, 0.2);
+  border: 1px solid #4B8C2A;
+}
+.mp-email-result-test-box {
+  text-align: left;
+  background-color: white;
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid;
+}
+.mp-email-result-review-label {
+  margin-top: 10px;
+}
+.mp-email-result-review-label:first-child {
+  margin-top: 0;
+}
+.mp-email-result-review-data {
+  text-transform: none;
+}
+.mp-email-result-test-rating-box {
+  background: scroll transparent 0 -32px no-repeat;
+  width: 173px;
+  height: 32px;
+}
+.mp-email-result-test-rating {
+  background: scroll transparent 0 0 no-repeat;
+  height: 32px;
+}
+.my-account .mp-customer-recent-reviews .mp-review-rating-box {
+  margin: 0;
+}
+.my-account .mp-customer-recent-reviews .mp-review-recent-link {
+  display: inline-block;
+  height: 20px;
+  line-height: 20px;
+  vertical-align: top;
+}
+.my-account .mp-customer-recent-reviews li .details {
+  margin-left: 0 !important;
+}
+.my-account .mp-customer-review .product-img-box {
+  width: 250px;
+}
+.my-account .mp-customer-review .product-name {
+  border-bottom: none;
+  margin: 0;
+  padding: 0;
+}
+.mp-reviews-product-view .product-name h1 {
+  border-bottom: none;
+}
+.mp-reviews-product-view a.product-image {
+  display: inline-block !important;
+}
+.mp-reviews-product-view .notice {
+  display: none;
+}
+.mp-reviews-product-view .product-image {
+  max-width: 40%;
+  display: inline-block;
+}
+.mp-reviews-product-view #image-main {
+  max-width: 100%;
+}
+.mp-reviews-product-view #image {
+  height: auto;
+  max-width: 100%;
+}
+.mp-reviews-product-view .mp-review-info {
+  vertical-align: top;
+  display: inline-block;
+  margin-left: 30px;
+}
+.mp-reviews-product-view .mp-review-info .ratings-table th {
+  vertical-align: middle;
+}
+.mp-reviews-product-view .mp-review-info .ratings-table .mp-review-rating-box {
+  margin-left: 5px;
+}
+.mp-reviews-product-view .mp-review-rating-box {
+  margin: 0;
+}
+.mp-reviews-product-view .back-link {
+  margin-top: 15px;
+}
+.mp-reviews-product-view .mp-ajax-reviews-indexing {
+  margin-top: 30px;
+}
+.mp-reviews-summary-count {
+  display: inline-block;
+  height: 20px;
+  margin: 10px 0;
+  line-height: 20px;
+  vertical-align: top;
+}
+.mp-reviews-rating-summary-short .mp-review-rating-box {
+  margin: 0;
+}
+.products-grid .mp-reviews-rating-summary-short .mp-review-rating-box {
+  margin: 0;
+}
+.mp-reviews-rating-summary-short .amount {
+  margin: 0;
+}
+.mp-review-rating-box {
+  margin: 10px 0;
+  display: inline-block;
+  background: scroll transparent 0 -22px no-repeat;
+  width: 115px;
+  height: 22px;
+}
+.mp-review-rating {
+  background: scroll transparent 0 0 no-repeat;
+  height: 22px;
+  width: 0;
+}
+.mp-product-review .ratings-table .mp-review-rating-box,
+#upsell-product-table .mp-reviews-rating-summary-short .mp-review-rating-box,
+#upsell-product-table .mp-reviews-rating-summary .mp-review-rating-box {
+  margin: 0;
+}
+.mp-product-review {
+  background-color: white;
+}
+.mp-product-review .ratings-table {
+  margin-bottom: 10px;
+}
+.mp-product-review .ratings-table th {
+  height: 20px;
+  line-height: 20px;
+  vertical-align: middle;
+  padding: 0 7px 0 0;
+}
+.ecom-ajax-reviews-dynamic {
+  display: none;
+}
+.mp-ajax-reviews {
+  padding: 20px 10px 10px 10px;
+  background-color: white;
+}
+.mp-ajax-reviews .mp-header {
+  margin-bottom: 15px;
+  position: relative;
+  margin-right: 10px;
+}
+.mp-ajax-reviews .mp-header button {
+  -webkit-transition: background 0.2s linear;
+  -moz-transition: background 0.2s linear;
+  -o-transition: background 0.2s linear;
+  transition: background 0.2s linear;
+}
+.mp-ajax-reviews .mp-add-btn {
+  margin-right: 10px;
+}
+.mp-ajax-reviews .mp-header-rating-box {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+  background: scroll transparent 0 -32px no-repeat;
+  width: 173px;
+  height: 32px;
+}
+.mp-ajax-reviews .mp-header-rating {
+  background: scroll transparent 0 0 no-repeat;
+  height: 32px;
+}
+.mp-ajax-reviews .mp-count {
+  height: 30px;
+  line-height: 30px;
+  font-size: 15px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.mp-ajax-reviews .mp-sorting {
+  display: inline-block;
+  vertical-align: middle;
+  height: 30px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.mp-ajax-reviews .mp-sorting-label {
+  margin-right: 5px;
+  font-size: 14px;
+  height: 30px;
+  line-height: 30px;
+  vertical-align: top;
+}
+.mp-ajax-reviews .mp-sorting-select {
+  font-size: 14px;
+  height: 30px;
+  display: inline-block;
+  vertical-align: top;
+}
+.mp-ajax-reviews .mp-arrow-box {
+  height: 30px;
+  width: 20px;
+  position: relative;
+  display: inline-block;
+}
+.mp-ajax-reviews .mp-arrow {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: scroll transparent no-repeat;
+  background-image: url("arrow.png");
+  background-image: url("arrow.svg"), none;
+  width: 11px;
+  height: 20px;
+}
+.mp-ajax-reviews .mp-arrow:hover {
+  cursor: pointer;
+}
+.mp-ajax-reviews .mp-arrow.asc {
+  background-position: 0 0;
+}
+.mp-ajax-reviews .mp-arrow.desc {
+  background-position: 0 -20px;
+}
+.mp-ajax-reviews .mp-arrow-hover {
+  background-image: url("arrow_hover.png");
+  background-image: url("arrow_hover.svg"), none;
+}
+.mp-ajax-reviews .mp-review {
+  clear: both;
+  border-top: 1px solid #e3e3e3;
+  display: inline-block;
+  padding: 10px 0;
+  width: 100%;
+}
+.mp-ajax-reviews .mp-review:last-child {
+  padding-bottom: 0;
+}
+.mp-ajax-reviews .mp-icon {
+  display: block;
+  position: relative;
+}
+.mp-ajax-reviews .mp-icon:hover {
+  cursor: default;
+}
+.mp-ajax-reviews .mp-icon-box {
+  position: absolute;
+  top: 5px;
+  width: 80px;
+  height: 80px;
+  background: scroll 0 0 no-repeat;
+  background-size: 80px 80px;
+}
+.mp-ajax-reviews .mp-icon-letter {
+  color: white;
+  font-size: 40px;
+  display: block;
+  line-height: 80px;
+  text-align: center;
+}
+.mp-ajax-reviews .mp-content {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  padding-left: 100px;
+}
+.mp-ajax-reviews .mp-content.full-width {
+  padding-left: 0 !important;
+}
+.mp-ajax-reviews .mp-nickname {
+  font-weight: bold;
+  font-size: 13px;
+  color: #636363;
+}
+.mp-ajax-reviews .mp-date {
+  display: inline-block;
+  float: right;
+  font-weight: 700;
+  font-size: 13px;
+  color: #a2a2a2;
+}
+.mp-ajax-reviews .mp-title {
+  font-weight: bold;
+  font-size: 16px;
+  margin-top: -5px;
+  color: #636363;
+}
+.mp-ajax-reviews .mp-title:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.mp-ajax-reviews .mp-bottom {
+  margin-top: 15px;
+}
+.mp-ajax-reviews .mp-share {
+  display: inline-block;
+  margin-right: 5px;
+  width: 20px;
+  height: 20px;
+  background: scroll #a2a2a2 no-repeat;
+  background-image: url("share-1.png");
+  background-image: url("share.svg"), none;
+  -webkit-transition: background-color 0.25s linear;
+  -moz-transition: background-color 0.25s linear;
+  -o-transition: background-color 0.25s linear;
+  transition: background-color 0.25s linear;
+}
+.mp-ajax-reviews .mp-share:hover {
+  background-color: #636363;
+  cursor: pointer;
+}
+.mp-ajax-reviews .mp-share a {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+}
+.mp-ajax-reviews .mp-facebook {
+  background-position: -40px 0;
+}
+.mp-ajax-reviews .mp-google {
+  background-position: -40px -20px;
+}
+.mp-ajax-reviews .mp-pinterest {
+  background-position: -20px 0;
+}
+.mp-ajax-reviews .mp-twitter {
+  background-position: -20px -20px;
+}
+.mp-ajax-reviews .mp-tumblr {
+  background-position: 0 0;
+}
+.mp-ajax-reviews .mp-vote-box {
+  display: inline-block;
+  float: right;
+  height: 20px;
+  width: 77px;
+  position: relative;
+}
+.mp-ajax-reviews .mp-vote {
+  display: inline-block;
+  position: absolute;
+  vertical-align: top;
+  width: 32px;
+  height: 20px;
+  line-height: 20px;
+  margin: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: white;
+  font-size: 11px;
+  -webkit-transition: background-color 0.2s linear;
+  -moz-transition: background-color 0.2s linear;
+  -o-transition: background-color 0.2s linear;
+  transition: background-color 0.2s linear;
+}
+.mp-ajax-reviews .mp-vote:hover {
+  cursor: default;
+}
+.mp-ajax-reviews .mp-like-box,
+.mp-ajax-reviews .mp-dislike-box {
+  display: inline-block;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  vertical-align: top;
+}
+.mp-ajax-reviews .mp-like-box {
+  width: 52px;
+}
+.mp-ajax-reviews .mp-like,
+.mp-ajax-reviews .mp-dislike {
+  display: inline-block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: scroll transparent 0 0 no-repeat;
+  background-image: url("vote.png");
+  background-image: url("vote.svg"), none;
+}
+.mp-ajax-reviews .mp-like:hover,
+.mp-ajax-reviews .mp-dislike:hover {
+  cursor: pointer;
+}
+.mp-ajax-reviews .mp-like-hover,
+.mp-ajax-reviews .mp-dislike-hover {
+  background-image: url("vote_hover.png");
+  background-image: url("vote_hover.svg"), none;
+}
+.mp-ajax-reviews .mp-like {
+  background-position: 0 0;
+}
+.mp-ajax-reviews .mp-dislike {
+  background-position: 0 -20px;
+}
+.mp-ajax-reviews .mp-more {
+ /* background-color: #fff;*/
+  text-align: center;
+  border: 1px solid #e6e6e6;
+  width: 100%;
+  font-size: 17px;
+  height: 40px;
+  line-height: 40px;
+  -webkit-transition: background-color 0.2s linear;
+  -moz-transition: background-color 0.2s linear;
+  -o-transition: background-color 0.2s linear;
+  transition: background-color 0.2s linear;
+}
+.mp-ajax-reviews .mp-more:hover {
+  background-color: #e6e6e6;
+  cursor: pointer;
+}
+.mp-ajax-reviews .mp-rounded .mp-icon-box {
+  -webkit-border-radius: 40px;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius: 40px;
+  -moz-background-clip: padding;
+  border-radius: 40px;
+  background-clip: padding-box;
+}
+.mp-ajax-reviews .mp-rounded .mp-share {
+  -webkit-border-radius: 10px;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius: 10px;
+  -moz-background-clip: padding;
+  border-radius: 10px;
+  background-clip: padding-box;
+}
+.mp-ajax-reviews .mp-rounded .mp-vote {
+  -webkit-border-radius: 10px;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius: 10px;
+  -moz-background-clip: padding;
+  border-radius: 10px;
+  background-clip: padding-box;
+}
+.mp-ajax-reviews #mp-overlay {
+  background-color: #000000;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+  zoom: 1;
+  filter: alpha(opacity=30);
+  -webkit-opacity: 0.3;
+  -moz-opacity: 0.3;
+  opacity: 0.3;
+}
+.mp-ajax-reviews #mp-overlay.ng-hide-add,
+.mp-ajax-reviews #mp-overlay.ng-hide-remove {
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  display: block !important;
+}
+.mp-ajax-reviews #mp-overlay.ng-hide-remove,
+.mp-ajax-reviews #mp-overlay.ng-hide-add.ng-hide-add-active {
+  zoom: 1;
+  filter: alpha(opacity=0);
+  -webkit-opacity: 0;
+  -moz-opacity: 0;
+  opacity: 0;
+}
+.mp-ajax-reviews #mp-overlay.ng-hide-add,
+.mp-ajax-reviews #mp-overlay.ng-hide-remove.ng-hide-remove-active {
+  zoom: 1;
+  filter: alpha(opacity=30);
+  -webkit-opacity: 0.3;
+  -moz-opacity: 0.3;
+  opacity: 0.3;
+}
+.mp-ajax-reviews .mp-box-container {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  text-align: center;
+  z-index: 9999;
+}
+.mp-ajax-reviews .mp-box-container:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+.mp-ajax-reviews .mp-box-container.ng-hide-add,
+.mp-ajax-reviews .mp-box-container.ng-hide-remove {
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  display: block !important;
+}
+.mp-ajax-reviews .mp-box-container.ng-hide-remove,
+.mp-ajax-reviews .mp-box-container.ng-hide-add.ng-hide-add-active {
+  zoom: 1;
+  filter: alpha(opacity=0);
+  -webkit-opacity: 0;
+  -moz-opacity: 0;
+  opacity: 0;
+}
+.mp-ajax-reviews .mp-box-container.ng-hide-add,
+.mp-ajax-reviews .mp-box-container.ng-hide-remove.ng-hide-remove-active {
+  zoom: 1;
+  filter: alpha(opacity=100);
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  opacity: 1;
+}
+.mp-ajax-reviews .mp-form-box {
+  text-align: left;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 20px;
+  left: 0;
+  right: 0;
+  background-color: white;
+  border: 2px solid #C4C1BC;
+  -webkit-border-radius: 6px;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius: 6px;
+  -moz-background-clip: padding;
+  border-radius: 6px;
+  background-clip: padding-box;
+  overflow: hidden;
+  overflow-y: auto;
+  max-height: 100%;
+}
+.mp-ajax-reviews .mp-form-box#mp-add-box {
+  width: 560px;
+}
+.mp-ajax-reviews .mp-form-box#mp-login-box,
+.mp-ajax-reviews .mp-form-box#mp-thank-box {
+  width: 400px;
+}
+.mp-ajax-reviews .mp-form-box#mp-login-box input {
+  width: 100% !important;
+}
+.mp-ajax-reviews .mp-form-box#mp-login-box .validation-advice {
+  font-size: 10px !important;
+}
+.mp-ajax-reviews .mp-form-box#mp-how-to-box {
+  max-width: 600px;
+}
+.mp-ajax-reviews .mp-form-box button {
+  min-height: 30px;
+}
+.mp-ajax-reviews .mp-form-box input,
+.mp-ajax-reviews .mp-form-box textarea {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.mp-ajax-reviews .mp-form-box textarea {
+  max-width: 100% !important;
+  resize: none;
+}
+.mp-ajax-reviews .mp-form-box label {
+  margin-bottom: 5px;
+}
+.mp-ajax-reviews .mp-form-box .validation-advice {
+  position: absolute;
+  margin-top: 0;
+  padding-top: 0 !important;
+  text-transform: none;
+}
+.mp-ajax-reviews .mp-form-box .validation-advice.rating-advice {
+  margin-top: -5px !important;
+}
+.mp-ajax-reviews .mp-form-title {
+  font-size: 16px;
+  margin-bottom: 11px;
+  line-height: 20px;
+}
+.mp-ajax-reviews .mp-add-ratings {
+  /*float: right;*/
+  position: relative; margin-top: 15px;
+}
+.mp-ajax-reviews .mp-add-ratings li {
+  min-width: 230px;
+}
+.mp-ajax-reviews .mp-add-rating-label {
+  width: 80px;
+  display: inline-block;
+  height: 22px;
+  line-height: 22px;
+  margin-bottom: 6px;
+}
+.mp-ajax-reviews .mp-add-rating-failed {
+  display: inline-block;
+}
+.mp-ajax-reviews .mp-add-rating-box {
+  display: inline-block;
+  background: scroll transparent 0 -22px no-repeat;
+  width: 23px;
+  height: 22px;
+}
+.mp-ajax-reviews .mp-add-rating-box:hover {
+  cursor: pointer;
+}
+.mp-ajax-reviews .mp-add-rating-box.mp-add-rating-box-failed {
+  background-position: 0 0;
+}
+.mp-ajax-reviews .mp-add-rating {
+  background: scroll transparent 0 0 no-repeat;
+  height: 22px;
+  width: 0;
+}
+.mp-ajax-reviews .mp-add-input {
+  position: relative;
+}
+.mp-ajax-reviews .mp-add-input div {
+  margin-bottom: 10px;
+}
+.mp-ajax-reviews .mp-add-input input {
+  width: 250px !important;
+}
+.mp-ajax-reviews .mp-error-msg,
+.mp-ajax-reviews .mp-notification {
+  clear: both;
+  display: inline-block;
+  margin-top: 14px;
+}
+.mp-ajax-reviews .mp-error-msg {
+  color: red;
+}
+.mp-ajax-reviews .mp-thank-icon {
+  width: 120px;
+  height: 120px;
+  background: scroll transparent 0 0 no-repeat;
+  margin: 0 auto 16px auto;
+}
+.mp-ajax-reviews .animated-inline.ng-hide-add,
+.mp-ajax-reviews .animated-inline.ng-hide-remove {
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  display: inline-block !important;
+}
+.mp-ajax-reviews .animated-inline.ng-hide-remove,
+.mp-ajax-reviews .animated-inline.ng-hide-add.ng-hide-add-active {
+  zoom: 1;
+  filter: alpha(opacity=0);
+  -webkit-opacity: 0;
+  -moz-opacity: 0;
+  opacity: 0;
+}
+.mp-ajax-reviews .animated-inline.ng-hide-add,
+.mp-ajax-reviews .animated-inline.ng-hide-remove.ng-hide-remove-active {
+  zoom: 1;
+  filter: alpha(opacity=100);
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  opacity: 1;
+}
+.mp-ajax-reviews .animated-msg.ng-hide-add {
+  -webkit-transition: margin-top 0.2s linear, opacity 0.1s linear;
+  -moz-transition: margin-top 0.2s linear, opacity 0.1s linear;
+  -o-transition: margin-top 0.2s linear, opacity 0.1s linear;
+  transition: margin-top 0.2s linear, opacity 0.1s linear;
+  display: inline-block !important;
+  float: left;
+}
+.mp-ajax-reviews .animated-msg.ng-hide-remove {
+  -webkit-transition: margin-top 0.2s linear, opacity 0.1s linear 0.1s;
+  -moz-transition: margin-top 0.2s linear, opacity 0.1s linear 0.1s;
+  -o-transition: margin-top 0.2s linear, opacity 0.1s linear 0.1s;
+  transition: margin-top 0.2s linear, opacity 0.1s linear 0.1s;
+  display: inline-block !important;
+  float: left;
+}
+.mp-ajax-reviews .animated-msg.ng-hide-remove,
+.mp-ajax-reviews .animated-msg.ng-hide-add.ng-hide-add-active {
+  zoom: 1;
+  filter: alpha(opacity=0);
+  -webkit-opacity: 0;
+  -moz-opacity: 0;
+  opacity: 0;
+  margin-top: -40px;
+}
+.mp-ajax-reviews .animated-msg.ng-hide-add,
+.mp-ajax-reviews .animated-msg.ng-hide-remove.ng-hide-remove-active {
+  zoom: 1;
+  filter: alpha(opacity=100);
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  opacity: 1;
+  margin-top: 14px;
+}
+@media screen and (max-width: 850px) {
+  .mp-ajax-reviews .mp-add-btn {
+    display: block;
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 770px) {
+  .mp-ajax-reviews .mp-content {
+    padding-left: 80px;
+  }
+  .mp-ajax-reviews .mp-icon-box {
+    width: 65px;
+    height: 65px;
+    background-size: 65px 65px;
+  }
+  .mp-ajax-reviews .mp-icon-letter {
+    line-height: 65px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .mp-ajax-reviews .mp-form-box#mp-add-box,
+  .mp-ajax-reviews .mp-form-box#mp-how-to-box {
+    width: 95%;
+  }
+  .mp-reviews-product-view .back-link {
+    margin-top: 5px;
+  }
+}
+@media screen and (max-width: 570px) {
+  .mp-ajax-reviews .mp-form-box#mp-add-box {
+    padding: 5px;
+  }
+  .mp-ajax-reviews .mp-add-ratings {
+    float: none;
+    margin-bottom: 10px;
+  }
+  .my-account .mp-customer-reviews-list .mp-review-rating-box {
+    display: none;
+  }
+}
+@media screen and (max-width: 480px) {
+  .mp-ajax-reviews .mp-form-box#mp-add-box div a {
+    float: none;
+    display: block;
+  }
+}
+@media screen and (max-width: 450px) {
+  .mp-ajax-reviews .mp-sorting {
+    display: block;
+    position: relative;
+    margin-top: 10px;
+  }
+  .mp-ajax-reviews .mp-form-box#mp-login-box,
+  .mp-ajax-reviews .mp-form-box#mp-thank-box {
+    width: 95%;
+  }
+  .mp-ajax-reviews .mp-date {
+    float: none;
+    display: block;
+  }
+}
+@media screen and (max-width: 400px) {
+  .mp-ajax-reviews .mp-vote-box {
+    float: none;
+    display: block;
+    margin-top: 5px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .mp-ajax-reviews .mp-form-box#mp-login-box button:last-child {
+    float: none;
+    display: block;
+    margin: 10px 0 0 0 !important;
+  }
+  .mp-reviews-product-view .mp-review-info {
+    margin-left: 5px;
+  }
+  .mp-reviews-product-view .mp-ajax-reviews-indexing {
+    margin-top: 10px;
+  }
+  .mp-reviews-product-view .mp-header .mp-first-btn {
+    font-size: 11px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .mp-ajax-reviews .mp-add-input input {
+    width: 100% !important;
+  }
+}
+@media screen and (max-width: 260px) {
+  .mp-ajax-reviews .mp-add-ratings label:first-child {
+    margin-bottom: -20px;
+  }
+  .mp-ajax-reviews .mp-add-rating-label {
+    display: block;
+    margin-top: 25px;
+    margin-bottom: -5px !important;
+  }
+  .mp-ajax-reviews .mp-add-input label:first-child {
+    margin-top: 22px;
+  }
+}

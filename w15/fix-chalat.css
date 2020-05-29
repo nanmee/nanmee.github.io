@@ -1,0 +1,144 @@
+/* Product Detail */
+.product-view .product-shop .detail-second-column .product-name h1,
+.product-view .product-shop .short-description,
+.product-view .product-shop .short-description .std p,
+.product-view .product-shop .short-description .stdesc p
+{
+	line-height: 1.70em;
+}
+
+.cms-index-index.cms-home .sale-image-content p{
+	line-height: 1.70em;
+ }
+
+/* Static Page */
+.cms-page-view .std p, .cms-no-route .std p,
+.cms-page-view .std .about-us-content li{
+	line-height: 1.70em;
+}
+
+
+/* Mega Menu */
+.sm-megamenu .list-column li, .ms-submenu .list-column li {
+	line-height: 1.70em;
+}
+
+/* Login */
+.account-login .form-instructions{
+	line-height: 1.70em;
+}
+
+/* My Account */
+ .customer-account-index.customer-account p,
+ .customer-address-index.customer-account address,
+ .dashboard .box-account address,
+ .sales-order-view.customer-account p,
+ .sales-order-view.customer-account address{
+ 	line-height: 1.70em;
+ }
+
+
+/* Header login icon */
+.login-link li.usrname{
+	margin-top: 0px;
+	max-width: 125px;
+	width: auto;
+	float: right;
+		
+}
+
+.login-link li.usrname a {
+	overflow: hidden;
+	white-space:nowrap;
+	display: block;
+	max-width: 125px;
+	width: auto;
+	text-overflow: ellipsis;
+}
+
+.login-link li.usrname:before{
+	top: -6px;
+}
+@media (min-width: 1200px) {
+	.ms-submenu:after{
+		left: 81px;
+	}
+}
+
+
+/* Fix Table */
+.data-table thead th, .data-table tbody td{
+	vertical-align: middle;
+}
+body.customer-account .data-table td.view span.nobr a:first-child{
+   margin-bottom: 15px;
+}
+body.customer-account .data-table td.view a{
+   font-size: 14px;
+}
+
+/* fix chosen Product Tag*/
+.chosen-container-multi .chosen-choices li.search-field input[type="text"]{
+	padding-top: 14px !important;
+}
+
+/* Cart fix */
+.onestepcheckout-index-index #reward_sales_point{
+    width: 65px !important;
+}
+
+.onestepcheckout-index-index .onestepcheckout-shipping-method-section .sp-methods dt,
+.onestepcheckout-index-index .onestepcheckout-shipping-method-section .sp-methods.rewardpoints-sp-methods dt{
+    margin-bottom: 10px !important;
+}
+
+.onestepcheckout-index-index .sp-methods.rewardpoints-sp-methods dt span{
+	font-size: 16px !important;
+	padding-left: 20px;
+}
+
+.onestepcheckout-index-index #check-spend-point,
+.onestepcheckout-index-index #check-spend-point + td{
+	display: none;
+}
+
+/* Hide point convert */
+.block-account li.last{
+	display: none;
+}
+/* Hide Product Tag */
+/*.catalog-category-view .block-layered-nav .block-content > dl > dt,
+.catalog-category-view .block-layered-nav .block-content > dl > dd:last-child{
+	display: none;
+}*/
+
+/* Hide Store */
+/*.product-view .add-to-links a.link-availability{
+	display: none;
+}*/
+
+/* Product Detail , Show more button */
+.short-description .morelink{
+	padding: 10px 12px;
+    font-size: 16px;
+}
+
+.customer-account-create .dob-day label,
+.customer-account-create .dob-month label,
+.customer-account-create .dob-year label
+{
+    margin-top: 10px;
+}
+
+.onestepcheckout-shipping-method-section dt {padding-left:20px}
+
+.box-md-bundles .bundlediscount-selections .bundlediscount-selections-img {margin-bottom: 10px;}
+.bundlediscount-info .bundle-listing {line-height: 1.7;}
+.bundlediscount-info .price-container {margin-top: 15px;}
+
+@media (max-width: 767px) {
+	#easyform_7_form .buttons-set .required {
+		display: block !important;
+		margin-bottom: 15px; 
+	}
+}

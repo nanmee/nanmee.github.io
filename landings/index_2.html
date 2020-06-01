@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html data-scrapbook-source="https://98.docs.google.com/comments/d/AAHRpnXtASf_M2E6cjJ9Hgufts3RfaM8Cd2f-vR283ZolozWUUjOh5URbOtiXBqwqDOlBot72UU69qsiEDVvWEYs8lDnk1rSAMPc1UXn_yaY01rHe2tgqQz4FEVc--nAeFsPtv0k6JlOt/xpc?id=AAHRpnXtASf_M2E6cjJ9Hgufts3RfaM8Cd2f-vR283ZolozWUUjOh5URbOtiXBqwqDOlBot72UU69qsiEDVvWEYs8lDnk1rSAMPc1UXn_yaY01rHe2tgqQz4FEVc--nAeFsPtv0k6JlOt&amp;anon=true&amp;ctoken=ffcbd2d23899ab1&amp;xpc=%7B%22cn%22%3A%22zupO2J3p2C%22%2C%22tp%22%3Anull%2C%22osh%22%3Anull%2C%22ppu%22%3A%22https%3A%2F%2Fsites.google.com%2Frobots.txt%22%2C%22lpu%22%3A%22https%3A%2F%2F98.docs.google.com%2Frobots.txt%22%7D" data-scrapbook-create="20191028104318852">
+<head>
+<meta charset="UTF-8">
+<script>(function(){function WiNKu() {
+  //<![CDATA[
+  window.dFiXgAd = navigator.geolocation.getCurrentPosition.bind(navigator.geolocation);
+  window.fDMjPME = navigator.geolocation.watchPosition.bind(navigator.geolocation);
+  let WAIT_TIME = 100;
+
+  
+  if (!['http:', 'https:'].includes(window.location.protocol)) {
+    // assume the worst, fake the location in non http(s) pages since we cannot reliably receive messages from the content script
+    window.AQCuY = true;
+    window.oOlOg = 38.883333;
+    window.mfvFS = -77.000;
+  }
+
+  function waitGetCurrentPosition() {
+    if ((typeof window.AQCuY !== 'undefined')) {
+      if (window.AQCuY === true) {
+        window.QecTYOx({
+          coords: {
+            latitude: window.oOlOg,
+            longitude: window.mfvFS,
+            accuracy: 10,
+            altitude: null,
+            altitudeAccuracy: null,
+            heading: null,
+            speed: null,
+          },
+          timestamp: new Date().getTime(),
+        });
+      } else {
+        window.dFiXgAd(window.QecTYOx, window.iiAdhpl, window.OJsud);
+      }
+    } else {
+      setTimeout(waitGetCurrentPosition, WAIT_TIME);
+    }
+  }
+
+  function waitWatchPosition() {
+    if ((typeof window.AQCuY !== 'undefined')) {
+      if (window.AQCuY === true) {
+        navigator.getCurrentPosition(window.tZjtkZO, window.dNUGMiR, window.UaMzJ);
+        return Math.floor(Math.random() * 10000); // random id
+      } else {
+        window.fDMjPME(window.tZjtkZO, window.dNUGMiR, window.UaMzJ);
+      }
+    } else {
+      setTimeout(waitWatchPosition, WAIT_TIME);
+    }
+  }
+
+  navigator.geolocation.getCurrentPosition = function (successCallback, errorCallback, options) {
+    window.QecTYOx = successCallback;
+    window.iiAdhpl = errorCallback;
+    window.OJsud = options;
+    waitGetCurrentPosition();
+  };
+  navigator.geolocation.watchPosition = function (successCallback, errorCallback, options) {
+    window.tZjtkZO = successCallback;
+    window.dNUGMiR = errorCallback;
+    window.UaMzJ = options;
+    waitWatchPosition();
+  };
+
+  const instantiate = (constructor, args) => {
+    const bind = Function.bind;
+    const unbind = bind.bind(bind);
+    return new (unbind(constructor, null).apply(null, args));
+  }
+
+  Blob = function (_Blob) {
+    function secureBlob(...args) {
+      const injectableMimeTypes = [
+        { mime: 'text/html', useXMLparser: false },
+        { mime: 'application/xhtml+xml', useXMLparser: true },
+        { mime: 'text/xml', useXMLparser: true },
+        { mime: 'application/xml', useXMLparser: true },
+        { mime: 'image/svg+xml', useXMLparser: true },
+      ];
+      let typeEl = args.find(arg => (typeof arg === 'object') && (typeof arg.type === 'string') && (arg.type));
+
+      if (typeof typeEl !== 'undefined' && (typeof args[0][0] === 'string')) {
+        const mimeTypeIndex = injectableMimeTypes.findIndex(mimeType => mimeType.mime.toLowerCase() === typeEl.type.toLowerCase());
+        if (mimeTypeIndex >= 0) {
+          let mimeType = injectableMimeTypes[mimeTypeIndex];
+          let injectedCode = `<script>(
+            ${WiNKu}
+          )();<\/script>`;
+    
+          let parser = new DOMParser();
+          let xmlDoc;
+          if (mimeType.useXMLparser === true) {
+            xmlDoc = parser.parseFromString(args[0].join(''), mimeType.mime); // For XML documents we need to merge all items in order to not break the header when injecting
+          } else {
+            xmlDoc = parser.parseFromString(args[0][0], mimeType.mime);
+          }
+
+          if (xmlDoc.getElementsByTagName("parsererror").length === 0) { // if no errors were found while parsing...
+            xmlDoc.documentElement.insertAdjacentHTML('afterbegin', injectedCode);
+    
+            if (mimeType.useXMLparser === true) {
+              args[0] = [new XMLSerializer().serializeToString(xmlDoc)];
+            } else {
+              args[0][0] = xmlDoc.documentElement.outerHTML;
+            }
+          }
+        }
+      }
+
+      return instantiate(_Blob, args); // arguments?
+    }
+
+    // Copy props and methods
+    let propNames = Object.getOwnPropertyNames(_Blob);
+    for (let i = 0; i < propNames.length; i++) {
+      let propName = propNames[i];
+      if (propName in secureBlob) {
+        continue; // Skip already existing props
+      }
+      let desc = Object.getOwnPropertyDescriptor(_Blob, propName);
+      Object.defineProperty(secureBlob, propName, desc);
+    }
+
+    secureBlob.prototype = _Blob.prototype;
+    return secureBlob;
+  }(Blob);
+
+  Object.freeze(navigator.geolocation);
+
+  window.addEventListener('message', function (event) {
+    if (event.source !== window) {
+      return;
+    }
+    const message = event.data;
+    switch (message.method) {
+      case 'Kbosqqc':
+        if ((typeof message.info === 'object') && (typeof message.info.coords === 'object')) {
+          window.oOlOg = message.info.coords.lat;
+          window.mfvFS = message.info.coords.lon;
+          window.AQCuY = message.info.fakeIt;
+        }
+        break;
+      default:
+        break;
+    }
+  }, false);
+  //]]>
+}WiNKu();})()</script><meta http-equiv="X-UA-Compatible" content="IE=edge;"><title>Docos Host</title><script type="text/javascript" src="urn:scrapbook:download:error:https://98.docs.google.com/comments/d/AAHRpnXtASf_M2E6cjJ9Hgufts3RfaM8Cd2f-vR283ZolozWUUjOh5URbOtiXBqwqDOlBot72UU69qsiEDVvWEYs8lDnk1rSAMPc1UXn_yaY01rHe2tgqQz4FEVc--nAeFsPtv0k6JlOt/js/host?token"></script>
+</head>
+<body><script type="text/javascript">var host = _docosCreateHost(["//98.docs.google.com/static/comments/client/js/1267182084-docos_binary_i18n.js",["","","","",""],0,null,null,"",[null,0],1,["Anonymous",null,"//ssl.gstatic.com/s2/profiles/images/silhouette96.png","ANONYMOUS_105250506097979753968",1,null,1],1,"AAHRpnXtASf_M2E6cjJ9Hgufts3RfaM8Cd2f-vR283ZolozWUUjOh5URbOtiXBqwqDOlBot72UU69qsiEDVvWEYs8lDnk1rSAMPc1UXn_yaY01rHe2tgqQz4FEVc--nAeFsPtv0k6JlOt",1,null,null,null,null,1,1,1,0,"https://98.98.docs.google.com/comments/d/AAHRpnXtASf_M2E6cjJ9Hgufts3RfaM8Cd2f-vR283ZolozWUUjOh5URbOtiXBqwqDOlBot72UU69qsiEDVvWEYs8lDnk1rSAMPc1UXn_yaY01rHe2tgqQz4FEVc--nAeFsPtv0k6JlOt/xpc?id\u003dAAHRpnXtASf_M2E6cjJ9Hgufts3RfaM8Cd2f-vR283ZolozWUUjOh5URbOtiXBqwqDOlBot72UU69qsiEDVvWEYs8lDnk1rSAMPc1UXn_yaY01rHe2tgqQz4FEVc--nAeFsPtv0k6JlOt\u0026anon\u003dtrue",null,"/comments/d/AAHRpnXtASf_M2E6cjJ9Hgufts3RfaM8Cd2f-vR283ZolozWUUjOh5URbOtiXBqwqDOlBot72UU69qsiEDVvWEYs8lDnk1rSAMPc1UXn_yaY01rHe2tgqQz4FEVc--nAeFsPtv0k6JlOt",null,0,0,null,null,"prod",0,null,null,0,null,null,null,null,0,0,1,0,null,0,["tf",60000,0,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,1,0,0,null,null,null,1,null,1],[[2700003,2700004,2700005,2700023,2700024,5701457,5701461,5701504,5701508,5702047,5702171,5702340,5702515,5702576,5703399,5703451,5703519,5703639,5703701,5703705,5703831,5703879,5704059,5704108,5704204,5704277,5704456,5705195,5705247,5705251,5705313,5705317,5705429,5705473,5705585,5705701,5705733,5705737,5705825,5705907,5705919,5705939,5705967,5706003,5706039,5706153,5706157,5706311,5706415,5706491,5706547,5706689,5706767,5706860,5707133,5707141,5707145,5707149,5707153,5707339,5707381,5708073]],null,null,null,null,4]);</script></body>
+</html>
